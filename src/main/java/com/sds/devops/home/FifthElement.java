@@ -23,6 +23,9 @@ public class FifthElement {
 	}
 
 	static int getFifthOfLast(LinkedList<Integer> list, int position) {
+		
+		if (position < 5) return -1;
+		
 		for (int i = 0; i < position-1; i++) 
 			list.removeLast();	
 		

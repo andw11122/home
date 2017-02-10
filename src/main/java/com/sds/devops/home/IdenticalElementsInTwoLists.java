@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class IdenticalTwoLists {
+public class IdenticalElementsInTwoLists {
 	public static void main(String[] args) throws Exception {
 
 		ArrayList<Integer> list1 = new ArrayList<Integer>();
@@ -28,21 +28,19 @@ public class IdenticalTwoLists {
 			list2.add(Integer.parseInt(st.nextToken()));
 		}
 
-		System.out.println("Is two lists identical  ? : " + checkIdenticalLists(list1, list2));
+		System.out.println("Are elements of two lists identical  ? : " + checkIdenticalLists(list1, list2));
 
 	}
 
 	static boolean checkIdenticalLists(ArrayList<Integer> firstList, ArrayList<Integer> secondList) {
 
 		if (firstList.size() != secondList.size())
-			return false;
+			return false;		
 		
-		Collections.sort(firstList);
-		Collections.sort(secondList);
-
-		if (firstList.equals(secondList))
-			return true;
-
-		return false;
+		boolean ret = true;
+		for (int i = 0; i < firstList.size(); i++){			
+			if (firstList.get(i) !=secondList.get(i)) ret = false;			
+		}		
+		return ret;
 	}
 }
