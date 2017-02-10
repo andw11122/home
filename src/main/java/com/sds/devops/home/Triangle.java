@@ -5,8 +5,8 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Triangle {
-	static enum Type {
-		EQUILATERAL, ISOSCELES, SCALENE
+	public static enum Type {
+		EQUILATERAL, ISOSCELES, SCALENE, FAIL
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -19,9 +19,15 @@ public class Triangle {
 		int sideThird = Integer.parseInt(st.nextToken());
 
 		System.out.println(checkTypeTriangle(sideFirst, sideSecond, sideThird));
+		
+
 	}
 
-	static Triangle.Type checkTypeTriangle(int first, int second, int third) {
+	public static Triangle.Type checkTypeTriangle(int first, int second, int third) {
+		
+		if (first < 0 || second < 0 ||third < 0) 
+			return Triangle.Type.FAIL ;
+		
 		if (first == second && second == third && third == first)
 			return Triangle.Type.EQUILATERAL;
 		else if ((first == second) || (second == third) || (third == first))
