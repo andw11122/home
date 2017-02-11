@@ -50,24 +50,6 @@ public class TriangleTest {
 		
 	}
 	
-	@Rule
-	public ExpectedException thrown = ExpectedException.none();
-	 
-	@Test
-	public void testThrowsExceptionWhenNumberFormatException() {
-		Triangle triangle = new Triangle();		
-	    thrown.expect(NumberFormatException.class);
-	   
-	    triangle.checkTypeTriangle(Integer.MAX_VALUE +1, -2, -3);
-	}
-	
-	@Test (expected = Exception.class)
-	public void testThrowsException() {
-		Triangle triangle = new Triangle();		
-	   	   
-	    triangle.checkTypeTriangle(Integer.MAX_VALUE +1, -2, -3);
-	    thrown.expect(Exception.class);
-	}
-	
+		
 	
 }
