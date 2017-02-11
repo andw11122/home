@@ -32,7 +32,7 @@ public class IdenticalElementsInTwoLists {
 
 	}
 
-	static boolean checkIdenticalLists(ArrayList<Integer> firstList, ArrayList<Integer> secondList) {
+	public static boolean checkIdenticalLists(ArrayList<Integer> firstList, ArrayList<Integer> secondList) throws Exception {
 
 		if (firstList.size() != secondList.size())
 			return false;		

@@ -9,7 +9,7 @@ import org.junit.Test;
 public class IdenticalElementsInTwoListsTest {
 
 	@Test
-	public void testOne() {
+	public void testOne() throws Exception {
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
 		ArrayList<Integer> secondList = new ArrayList<Integer>();
 		firstList.add(1);secondList.add(1);
@@ -18,7 +18,7 @@ public class IdenticalElementsInTwoListsTest {
 	}
 	
 	@Test
-	public void testMultiple() {
+	public void testMultiple() throws Exception {
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
 		ArrayList<Integer> secondList = new ArrayList<Integer>();
 		for (int i=1;i<100;i++) {
@@ -31,7 +31,7 @@ public class IdenticalElementsInTwoListsTest {
 	}
 	
 	@Test
-	public void testDifference() {
+	public void testDifference() throws Exception {
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
 		ArrayList<Integer> secondList = new ArrayList<Integer>();
 		firstList.add(1);

@@ -22,7 +22,7 @@ public class FifthElement {
 		System.out.println(getFifthOfLast(list, POSITION));		
 	}
 
-	static int getFifthOfLast(LinkedList<Integer> list, int position) {
+	public static int getFifthOfLast(LinkedList<Integer> list, int position)  throws Exception {
 		
 		if (position < 5) return -1;
 		

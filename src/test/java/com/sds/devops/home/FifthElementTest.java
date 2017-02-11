@@ -9,7 +9,7 @@ import org.junit.Test;
 public class FifthElementTest {
 
 	@Test
-	public void testBasic() {
+	public void testBasic()  throws Exception{
 		FifthElement fifthElement = new FifthElement();	
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		for (int i = 0; i < 10; i++)
@@ -18,7 +18,7 @@ public class FifthElementTest {
 	}
 	
 	@Test
-	public void testNegative() {
+	public void testNegative()  throws Exception {
 		FifthElement fifthElement = new FifthElement();	
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		for (int i = 0; i < 10; i++)
@@ -28,7 +28,7 @@ public class FifthElementTest {
 	
 	
 	@Test
-	public void testBig() {
+	public void testBig()  throws Exception{
 		FifthElement fifthElement = new FifthElement();	
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		for (int i = 0; i < 99999; i++)
@@ -37,7 +37,7 @@ public class FifthElementTest {
 	}
 	
 	@Test(timeout=1000)
-	public void testPerformance() {
+	public void testPerformance() throws Exception {
 		FifthElement fifthElement = new FifthElement();	
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		for (int i = 0; i < 999999; i++)

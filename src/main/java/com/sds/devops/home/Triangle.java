@@ -23,7 +23,7 @@ public class Triangle {
 
 	}
 
-	public static Triangle.Type checkTypeTriangle(int first, int second, int third) {
+	public static Triangle.Type checkTypeTriangle(int first, int second, int third) throws Exception {
 		
 		if (first < 0 || second < 0 ||third < 0) 
 			return Triangle.Type.FAIL ;
